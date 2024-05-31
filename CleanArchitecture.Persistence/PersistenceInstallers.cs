@@ -7,7 +7,7 @@ namespace CleanArchitecture.Persistence
     {
         public static void AddPersistenceServices(this IServiceCollection services)
         {
-            services.AddScoped<IDatabaseService, DatabaseService>();
+            services.AddScoped<IMongoRepo, MongoRepo>();
         }
     }
 }
